@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="css/css-tutorial.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr id="titulo">
+            <th>CSS Advanced</th>
+        </tr>
+        <tr>
+            <td><a href="#rounded-corners">CSS Rounded Corners</a></td>
+        </tr>
+        <tr>
+            <td><a href="#border-images">CSS Border Images</a></td>
+        </tr>
+        <tr>
+            <td><a href="#backgrounds1">CSS Backgrounds</a></td>
+        </tr>
+        <tr>
+            <td><a href="#colors">CSS Colors</a></td>
+        </tr>
+        <tr>
+            <td><a href="#color-keywords">CSS Color Keywords</a></td>
+        </tr>
+        <tr>
+            <td><a href="#gradient1">CSS Gradients</a></td>
+        </tr>
+        <tr>
+            <td><a href="#shadows">CSS Shadows</a></td>
+        </tr>
+        <tr>
+            <td><a href="#text-effects">CSS Text Effects</a></td>
+        </tr>
+        <tr>
+            <td><a href="#web-fonts">CSS Web Fonts</a></td>
+        </tr>
+        <tr>
+            <td><a href="#buttons">CSS Buttons</a></td>
+        </tr>
+        <tr>
+            <td><a href="#pagination">CSS Pagination</a></td>
+        </tr>
+        <tr>
+            <td><a href="#multiple-columns">CSS Multiple Columns</a></td>
+        </tr>
+        <tr>
+            <td><a href="#user-interface">CSS User Interface</a></td>
+        </tr>
+        <tr>
+            <td><a href="#box-sizing">CSS Box Sizing</a></td>
+        </tr>
+    </table>
+
+    <article id="rounded-corners">
+        <h1>Rounded Corners</h1>
+        <p>Esta propiedad define el radio de las esquinas de un elemento</p>
+        <h3>Sintaxis: <br>
+            etiqueta-a-aplicar-estilo{ <br>
+            border-radius:(15px; se aplica sobre los cuatro por igual) <br>
+            (15px 25px; el primer valor se aplica al lado superior izquierda e inferior derecha y el segundo valor al contrario ) <br>
+            (15px 25px 35px; el primer valor se aplica al lado superior izquierda el segundo al dado superior derecho e inferior izquierda y el tercero inferior derecha) <br>
+            (15px 25px 35px 40px; los valores apican en sentido a las agujas del reloj empezando por la parte superior izquierda) <br> } <br>
+            border-radius:valor; <br>
+            border-top-left-radius:valor;  <br>
+            border-top-right-radius:valor; <br> 
+            border-bottom-right-radius:valor; <br>
+            border-bottom-left-radius:valor; 
+        </h3>
+        <div id="box-corners"></div>
+    </article>
+    
+    <article id="border-images">
+        <h1>Border Images</h1>
+        <p>Se utiliza una imagen para ser usada como borde</p>
+        <h3>Sintaxis: <br> 
+            etiqueta-a-aplicar-estilo{ <br>
+            border:(sin esto no se puede poner el borde); <br>
+            border-image:(url de donde se situa la imagen) value round/strech ; <br> }
+            border-image-source: url(ruta del archivo) ;<br>
+            border-image-slice: corte ;<br>
+            border-image-width: ancho ; <br>
+            border-image-outset: salida por fuera del borde ;<br>
+            border-image-repeat: queremos que se repita el borde ;
+        </h3>
+        <div id="image-border">texto de ejemplo</div>
+    </article>
+    
+    <article id="backgrounds1">
+        <h1>Backgrounds</h1>
+        <p>Esta parte se centra en las diferentes formas de modificar el fondo</p>
+        <h3>Sintaxis: <br>
+            etiqueta-a-aplicar-estilo{ <br>
+            background-image: imagen como fondo ;<br>
+            background-size: contain(lo mas largo posible)/cover(ocupa el completamente el espacio);<br>
+            background-origin: posicion de la imagen ;<br>
+            background-clip: area de dibujo del fondo ;<br>}
+        </h3>
+        <div id="background">imagen</div>
+    </article>
+    
+    <article id="colors">
+        <h1>Colors</h1>
+        <p>Formas de dar color personalizable</p>
+        <h3>Sintaxis: <br>
+            etiqueta-a-aplicar-estilo{ <br>
+            background-color: rgba(rojo,verde,azul(los tres de 0 a 255),opacidad(de 0 a 1))<br>
+            background-color: hsla(matiz(de 0 a 360),saturación(de 0 a 100%),luminosidad(de 0 a 100%) opacidad(de 0 a 1))<br>
+        }</h3>
+        <div id="color"></div>
+    </article>
+    
+    <article id="color-keywords">
+        <h1>Color keywords</h1>
+        <p>Modificación del colores en distintas situaciones</p>
+        <h3>Sintaxis: <br>
+            etiqueta-a-aplicar-estilo{ <br>
+            background-color: transparent(el color es transparente y por lo tanto no se ve);<br>
+            border: 10px solid currentcolor(selecciona el color del elemento en el que se encuentra);<br>
+            border: inherit(heredado del padre) ;<br> }
+        </h3>
+        <div id="ejempl"><div id="keyword">Este es un texto en verde con el color heredado.</div></div>
+    </article>
+    
+    <article id="gradient1">
+        <h1>Gradient</h1>
+        <p>Transiciones de color</p>
+        <h3>Sintaxis: <br>
+            etiqueta-a-aplicar-estilo{ <br>
+            background-image: linear-gradient(to(y la direccion o angulo que quiers que tome),colores por los que quieres que pase);<br>
+            background-image: radial-gradient(forma, colores o colores en %)/repeating-radial-gradient;<br>
+            background-image: conic-gradient(from(grados movidos), colores o colores con grados deg)/repeating-conic-gradient;<br> }
+        </h3>
+        <div id="gradient"></div>
+    </article>
+    
+    <article id="shadows">
+        <h1>Shadow Effects</h1>
+        <p>Sombra sobre un texto y cajas</p>
+        <h3>Sintaxis: <br>
+            etiqueta-a-aplicar-estilo{ <br>
+            text-shadow: (sobra-horizontal sombra-vertical difuminado color) se pueden añadir varias;<br>
+            box-shadow: sombra-horizontal sombra-vertical difuminado radio color ;<br> }
+        </h3>
+        <div id="shadow"></div>
+    </article>
+    
+    <article id="text-effects">
+        <h1>Text Effects</h1>
+        <p>En relación con cómo los textos se comportan</p>
+        <h3>Sintaxis: <br>
+            etiqueta-a-aplicar-estilo{ <br>
+            text-overflow: clip/ellipsis(cuando el texto no puede no mostrar nada o puntos suspensivos);<br>
+            word-wrap: break-word(palabras largas son divididas sin indicar separación) ;<br>
+            word-break: keep-all/break-all(reglas de rotura de palabra);<br>
+            writing-mode: horizontal/vertical(posición en la cual se escribe el texto)+-tb(top-bottom) o rl(right-left); <br> }
+        </h3>
+        <div id="text">texto de ejemplo<b>este texto es el modificado</b></div>
+    </article>
+    
+    <article id="web-fonts">
+        <h1>Web Fonts</h1>
+        <p>Fuentes creadas específicamente para web</p>
+        <h3>Sintaxis: <br>
+            etiqueta-a-aplicar-estilo{ <br>
+            font-family: (definimos el nombre de la fuente);<br>
+            font-family: url(la fuente que queremos);<br>
+            font-stretch: nivel de ensanchamiento de la letra ;<br>
+            font-style: estilo de la fuente ;<br>
+            font-weight: ancho de la letra ;<br>
+            writing-mode: horizontal/vertical(posición en la cual se escribe el texto)+-tb(top-bottom) o rl(right-left); <br> }
+        </h3>
+    </article>
+    
+    <article id="buttons">
+        <h1>Buttons</h1>
+        <p>Diseño de los botones</p>
+        <h3>Sintaxis: <br>
+            etiqueta-a-aplicar-estilo:hover(efecto para cuando el cursor está por encima){ <br>
+            background-color: color;<br>
+            font-size: tamaño;<br>
+            padding: separación entre el texto y los bordes;<br>
+            border-radius: circunferencia ;<br>
+            border: grosor y color de borde ;<br>
+            box-shadow: sombra ; <br>
+            cursor: not-allowed(no se refleja al pasar por encima);<br>
+            float: left/block(crea un grupo de botones);<br> }
+        </h3>
+        <button class="button1">Ejemplo de botón</button>
+    </article>
+    
+    <article id="pagination">
+        <h1>Pagination</h1>
+        <p>Desplazamiento entre páginas</p>
+        <h3>Sintaxis: <br>
+            etiqueta-a-aplicar-estilo:hover(efecto para cuando el cursor está por encima)/.active (para saber en cual estamos) { <br>
+            display: inline-block(se nos muestra en horizontal);<br>
+            transition: efecto deseado;<br>
+            border: borde que queremos;<br> }
+        </h3>
+        <button id="menu">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#" class="active">5</a>
+            <a href="#">6</a>
+        </button>
+    </article>
+    
+    <article id="multiple-columns">
+        <h1>Multiple Columns</h1>
+        <p>Crear columnas</p>
+        <h3>Sintaxis: <br>
+            etiqueta-a-aplicar-estilo{ <br>
+            column-count: número de columnas totales;<br>
+            column-gap: Espacio entre etiquetas;<br>
+            column-rule-style(separador)/width(grosor)/color(color): ;<br> }
+        </h3>
+        <div id="column">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quos perspiciatis vero neque ut beatae atque voluptates quam. Minus, veniam vitae! Distinctio excepturi aspernatur, quaerat quidem nostrum itaque numquam delectus.</div>
+    </article>
+    
+    <article id="user-interface">
+        <h1>User Interface</h1>
+        <p>Ayudas a los usuarios para modificar cajas</p>
+        <h3>Sintaxis: <br>
+            etiqueta-a-aplicar-estilo{ <br>
+            resize: cómo puede el usuario adaptarlo ;<br>
+            outline-offset: espacio entre contorno y borde ;<br> }
+        </h3>
+        <div id="resize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ut, veniam, dolore soluta in quisquam quas perspiciatis rerum aspernatur tempore eum velit officiis excepturi esse exercitationem numquam accusantium, repellendus ipsa!</div>
+    </article>
+    
+    <article id="box-sizing">
+        <h1>Border Sizing</h1>
+        <p>Ajustar cajas</p>
+        <h3>Sintaxis: <br>
+            etiqueta-a-aplicar-estilo{ <br>
+            box-sizing: border-box(se añade separación al altura y ancho);<br> }
+        </h3>
+        <div id="sizing">Lorem ipsum </div>
+    </article>
+    
+</body>
+
+</html>
